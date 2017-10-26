@@ -1,0 +1,40 @@
+thead tr th {
+    border-bottom: gray 1px solid;
+}
+
+tbody tr.selected td {
+    text-weight: bold;
+    color: blue;
+    text-decoration: underline;
+}
+
+tbody tr.passed td {
+    text-weight: normal;
+    color: gray;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+tbody tr:hover td {
+    text-decoration: underline;
+}
+
+tbody label.end {
+    color: gray;
+    font-style: italic;
+}
+
+table {
+    margin-bottom: 10px;
+}
+
+div.options {
+    position: fixed;
+    font-size: 60%;
+    text-align: right;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    background: default;
+}

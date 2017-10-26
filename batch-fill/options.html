@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="options.css">
+    <title>List Fill</title>
+</head>
+
+<body>
+<section>
+    <h2>Batch Fill</h2>
+    <div class="line">
+        <label for="enabled">Enabled:</label> <input type="checkbox" id="enabled">
+        <label for="delay">Delay:</label>
+        <select id="delay">
+            <option value="0">0s</option>
+            <option value="1">1s</option>
+            <option value="2">2s</option>
+            <option value="3">3s</option>
+        </select> <span class="tip">(If fields are not filled, try increase the delay)</span>
+    </div>
+    <div class="line">
+        <label for="site">Site:</label> <br>
+        <input type="text" id="site" value="" placeholder="Example: paypal.com">
+    </div>
+    <div class="line">
+        <label for="newline">Newline Signature:</label> <br>
+        <input type="text" id="newline" value="" placeholder="Page with the text triggers next line. Example: The money has been sent!">
+    </div>
+    
+    <div class="line">
+        <label for="list">List:</label> <br>
+        <textarea id="list" placeholder="csv format, first line for HTML input name attributes, each line for values of the fields in order"></textarea>
+    </div>
+</section>
+<script src="options.js"></script>
+</body>
+</html>
